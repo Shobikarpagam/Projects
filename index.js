@@ -7,7 +7,7 @@ const Comment = require('./model/comment');
 const app = express();
 app.use(bodyParser.json());
 
-// Sync Database
+
 sequelize.sync().then(() => {
   console.log('Database synced');
 }).catch((err) => {
@@ -129,7 +129,6 @@ app.post('/posts/:postId/comments', async (req, res) => {
     }
   });
   
-// Define Routes here
 
 
 app.listen(5000, () => {
