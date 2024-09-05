@@ -9,7 +9,7 @@ const Comment = sequelize.define('Comment', {
   },
 });
 
-Comment.belongsTo(Post); // Establishes relationship
+Comment.belongsTo(Post); 
 Post.hasMany(Comment);
 
 module.exports = Comment;
